@@ -1,5 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
+using System.Diagnostics;
 
 class SayaTubeVideo
 {
@@ -9,21 +9,29 @@ class SayaTubeVideo
 
     public SayaTubeVideo(string title)
     {
-        if (string.IsNullOrEmpty(title))
-            throw new ArgumentException("Title cannot be null or empty");
+        Debug.Assert(!string.IsNullOrEmpty(title) && title.Length <= 100, "Title must not be null and should be at most 100 characters");
 
         Random random = new Random();
-        this.id = random.Next(10000, 99999); 
+        this.id = random.Next(10000, 99999);
         this.title = title;
         this.playCount = 0;
     }
 
     public void IncreasePlayCount(int count)
     {
-        if (count < 0)
-            throw new ArgumentException("Play count must be positive");
+        Debug.Assert(count > 0 && count <= 10000000, "Play count must be between 1 and 10,000,000");
 
-        this.playCount += count;
+        try
+        {
+            checked
+            {
+                this.playCount += count;
+            }
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: Play count overflow detected.");
+        }
     }
 
     public void PrintVideoDetails()
@@ -43,6 +51,17 @@ class Program
 
         video.IncreasePlayCount(10);
         video.PrintVideoDetails();
+
+        try
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                video.IncreasePlayCount(10000000); 
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception caught: {ex.Message}");
+        }
     }
 }
-
