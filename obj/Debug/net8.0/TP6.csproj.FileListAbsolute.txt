@@ -1,0 +1,15 @@
+D:\KONSTRUKSI\TP6\bin\Debug\net8.0\TP6.exe
+D:\KONSTRUKSI\TP6\bin\Debug\net8.0\TP6.deps.json
+D:\KONSTRUKSI\TP6\bin\Debug\net8.0\TP6.runtimeconfig.json
+D:\KONSTRUKSI\TP6\bin\Debug\net8.0\TP6.dll
+D:\KONSTRUKSI\TP6\bin\Debug\net8.0\TP6.pdb
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.GeneratedMSBuildEditorConfig.editorconfig
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.AssemblyInfoInputs.cache
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.AssemblyInfo.cs
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.csproj.CoreCompileInputs.cache
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.sourcelink.json
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.dll
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\refint\TP6.dll
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.pdb
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\TP6.genruntimeconfig.cache
+D:\KONSTRUKSI\TP6\obj\Debug\net8.0\ref\TP6.dll
